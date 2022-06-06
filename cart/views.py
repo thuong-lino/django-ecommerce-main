@@ -44,7 +44,8 @@ def checkout(request):
                 order_detail.ordered = True
                 order_detail.minus_inventory()
                 order_detail.save()
-            messages.success(request, "Your order are placed")
+            messages.success(
+                request, "Đơn hàng của bạn đã được ghi nhận, chúng tôi sẽ liên lạc với bạn để xác nhận đơn hàng")
             return render(request, 'base/success.html')
 
     context = {
@@ -134,5 +135,5 @@ def remove_from_cart(request, pk):
             return redirect("shop", pk=pk)
     else:
         # add message doesnt have order
-        messages.info(request, "You do not have an Order")
+        messages.info(request, "Bạn chưa có đơn hàng nào")
         return redirect("shop", pk=pk)

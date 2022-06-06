@@ -7,7 +7,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
           	<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home</a></span> <span class="mr-2"><a href="index.html">Product</a></span> <span>Product Single</span></p>
-            <h1 class="mb-0 bread">Product Single</h1>
+            <h1 class="mb-0 bread">Chi Tiết Sản Phẩm</h1>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
     			</div>
     			<div class="col-lg-6 product-details pl-md-5 ftco-animate">
     				<h3>{{ product.name }}</h3>
-    				<div class="rating d-flex">
+    				<div class=" d-flex">
 							<p class="text-left mr-4">
 								<a href="#" class="mr-2">5.0</a>
 								<a href="#"><span class="ion-ios-star-outline"></span></a>
@@ -31,10 +31,10 @@
 								<a href="#"><span class="ion-ios-star-outline"></span></a>
 							</p>
 							<p class="text-left mr-4">
-								<a href="#" class="mr-2" style="color: #000;">100 <span style="color: #bbb;">Rating</span></a>
+								<a href="#" class="mr-2" style="color: #000;">100 <span style="color: #bbb;">Đánh Giá</span></a>
 							</p>
 							<p class="text-left">
-								<a href="#" class="mr-2" style="color: #000;">500 <span style="color: #bbb;">Sold</span></a>
+								<a href="#" class="mr-2" style="color: #000;">500 <span style="color: #bbb;">Đã bán</span></a>
 							</p>
 						</div>
     				<p class="price"><span>${{ product.price }}</span></p>
@@ -69,10 +69,10 @@
 	          	</div>
 	          	<div class="w-100"></div>
 	          	<div class="col-md-12">
-	          		<p style="color: #000;">{{product.inventory}} available</p>
+	          		<p style="color: #000;">{{product.inventory}} tồn kho</p>
 	          	</div>
           	</div>
-          	<p><a href="{% url 'cart' %}" class="btn btn-black py-3 px-5">Add to Cart</a></p>
+          	<p><a href="{% url 'cart' %}" class="btn btn-black py-3 px-5">Thêm vào giỏ hàng</a></p>
     			</div>
     		</div>
     	</div>
