@@ -8,4 +8,6 @@ urlpatterns = [
         'product/<product_id>', views.product_details, name='product-details'
     ),
     path('wishlist/', views.wishlist, name='wishlist'),
+
+
 ]
